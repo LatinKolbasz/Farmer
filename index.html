@@ -5,11 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farmer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div>
-        <div>
+    <div class="page">
+        <div class="content">
+            <section class="style-gallery">
+                <h2>Farmerstílusok</h2>
+                <div class="image-grid">
+                    <figure class="visual-card">
+                        <img src="jeans.jpg" alt="Kék farmernadrág képe">
+                        <figcaption>Classic denim</figcaption>
+                    </figure>
+                    <figure class="visual-card">
+                        <img src="aonojeans.jpg" alt="Aono farmeres stílus képe">
+                        <figcaption>Aono style</figcaption>
+                    </figure>
+                    <figure class="visual-card">
+                        <img src="inmorino-jeans.jpg" alt="Inmorino farmeres stílus képe">
+                        <figcaption>Inmorino vibe</figcaption>
+                    </figure>
+                </div>
+            </section>
+
             <h1>A farmer titokzatos története – Már 1655-ben is hordták</h1>
             <p>Egy 17. századi olasz művész festményei jelenthetik a kulcsot a több száz éves farmerrejtélyhez, ugyanis
                 az
@@ -81,7 +100,7 @@
 
             <h1>Szövegértés teszt</h1>
 
-            <form>
+            <form class="quiz-form">
                 <div><label for="nev">Név/osztály:</label>
                     <input type="text" id="nev" name="nev">
                 </div>
@@ -192,24 +211,18 @@
                     </label><br><br><textarea id="alkoto" name="alkoto" rows="6" cols="50"></textarea>
                 </div>
 
+                <div class="submit-row">
+                    <button type="button" id="check-button">Ellenőrzés</button>
+                </div>
+
+                <div id="result-box" class="result-box" aria-live="polite">
+                    Itt fog megjelenni az eredmény.
+                </div>
+            </form>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
